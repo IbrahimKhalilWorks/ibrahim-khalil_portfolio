@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unique Contact Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="loader">
+      <div class="spinner"></div>
+      <p>Loading...</p>
+    </div>
+    <!-- Main Container -->
+    <div class="main-container">
+      <!-- Header Section -->
+      <header class="header">
+        <div class="logo">IBRAHIM</div>
+
+        <nav class="nav">
+          <div class="unique-actions">
+            <a href="">
+              <button id="unique-reload" class="unique-action-btn">
+                <svg viewBox="0 0 24 24" class="unique-action-icon">
+                  <path
+                    d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"
+                  />
+                </svg></button
+            ></a>
+
+            <a href="index.html"
+              ><button id="unique-close" class="unique-action-btn">
+                <svg viewBox="0 0 24 24" class="unique-action-icon">
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg></button
+            ></a>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <div class="unique-container">
+      <main class="unique-main">
+        <p class="unique-title">
+          Thanks for taking the time to reach out. How can I help you today?
+        </p>
+
+        <form action="https://api.web3forms.com/submit" method="POST" id="unique-contact-form" class="unique-form">
+
+          <!-- Replace with your Access Key -->
+          <input type="hidden" name="access_key" value="2b33a49f-9d42-4834-9f64-58bc3013d911">
+        
+          <!-- Form Inputs. Each input must have a name="" attribute -->
+          <div class="unique-form-row">
+            <div class="unique-form-group">
+              <label for="unique-name" class="unique-label">Name</label>
+              <input
+                type="text"
+                id="unique-name"
+                name="name"
+                class="unique-input"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="unique-form-group">
+              <label for="unique-email" class="unique-label">Email</label>
+              <input
+                type="email"
+                id="unique-email"
+                name="email"
+                class="unique-input"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+          </div>
+          
+          <div class="unique-form-group">
+            <label for="unique-message" class="unique-label">Message</label>
+            <textarea
+              id="unique-message"
+              name="message"
+              class="unique-textarea"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+          </div>
+        
+          <!-- Honeypot Spam Protection -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
+          <!-- Custom Confirmation / Success Page (Optional) -->
+          <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+        
+          <button type="submit" class="unique-submit-btn">Submit</button>
+        
+        </form>
+        
+        
+      
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
