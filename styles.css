@@ -997,6 +997,7 @@ main .profile-pic {
 
   .footer-credits {
     font-size: 1rem; /* Adjust footer credit text size */
+    margin-bottom: 20px;
   }
   .skill-card {
     max-width: 100%;
