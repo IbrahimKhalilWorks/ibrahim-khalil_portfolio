@@ -34,7 +34,11 @@ body {
   background: var(--background-color);
   z-index: 9999;
 }
-
+.img-head{
+  height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
 
 .loader {
@@ -456,6 +460,7 @@ main .profile-pic {
   height: 200px;
   border-radius: 50%;
   margin-top: 50px;
+  background: var(--primary-color);
 }
 
 .about-section {
