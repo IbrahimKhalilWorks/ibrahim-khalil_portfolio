@@ -35,16 +35,8 @@ body {
   z-index: 9999;
 }
 
-#loader .spinner {
-  width: 60px;
-  height: 60px;
-  border: 5px solid var(--secondary-color);
-  border-top: 5px solid var(--primary-color);
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
 
-/* From Uiverse.io by Nawsome */ 
+
 .loader {
   position: relative;
   width: 75px;
@@ -56,7 +48,7 @@ body {
   bottom: 0;
   width: 10px;
   height: 50%;
-  background: rgb(0, 0, 0);
+  background: #7510F7;
   transform-origin: center bottom;
   box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
