@@ -72,3 +72,4 @@ menuToggle.addEventListener("click", () => {
     sidebar.style.left = "0"; // Show sidebar
   }
 });
+
