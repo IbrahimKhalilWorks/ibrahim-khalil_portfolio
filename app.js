@@ -59,3 +59,16 @@ submitBtn.addEventListener("click", function(event) {
     event.preventDefault(); // Prevent form submission
   }
 });
+
+
+// JavaScript to toggle sidebar visibility
+const menuToggle = document.getElementById("menuToggle");
+const sidebar = document.getElementById("sidebar");
+
+menuToggle.addEventListener("click", () => {
+  if (sidebar.style.left === "0px") {
+    sidebar.style.left = "-250px"; // Hide sidebar
+  } else {
+    sidebar.style.left = "0"; // Show sidebar
+  }
+});

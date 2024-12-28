@@ -386,12 +386,12 @@ body {
   margin: 0 auto;
   padding: 20px 15px;
 }
-
 /* Header */
 header.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 header .logo {
@@ -408,6 +408,7 @@ nav.nav {
 nav .mentorship-link:hover {
   color: var(--button-border-color);
 }
+
 nav .mentorship-link {
   text-decoration: none;
   font-size: 1.2em;
@@ -430,6 +431,14 @@ button.say-hello {
 button.say-hello:hover {
   background: var(--primary-color);
   color: #ffffff;
+}
+
+/* Mobile Hamburger Icon */
+.menu-toggle {
+  display: none; /* Hidden by default */
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 2000;
 }
 
 /* Hero Section */
@@ -1415,6 +1424,13 @@ main .profile-pic {
 
   nav .mentorship-link {
     margin-bottom: 10px;
+  }
+
+  .menu-toggle {
+    display: block;  
+    position: absolute;
+    top: 15px;
+    left: 15px;
   }
 
   main .hero h1 {
