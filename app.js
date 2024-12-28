@@ -60,7 +60,6 @@ submitBtn.addEventListener("click", function(event) {
   }
 });
 
-
 // JavaScript to toggle sidebar visibility
 const menuToggle = document.getElementById("menuToggle");
 const sidebar = document.getElementById("sidebar");
@@ -72,4 +71,3 @@ menuToggle.addEventListener("click", () => {
     sidebar.style.left = "0"; // Show sidebar
   }
 });
-
