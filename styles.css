@@ -19,7 +19,9 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   overflow-x: hidden;
-}/* Header */
+}
+
+/* Header */
 header.header {
   display: flex;
   justify-content: space-between;
@@ -37,9 +39,6 @@ nav.nav {
   align-items: center;
 }
 
-nav .mentorship-link:hover {
-  color: var(--button-border-color);
-}
 nav .mentorship-link {
   text-decoration: none;
   font-size: 1.2em;
@@ -62,16 +61,7 @@ button.say-hello {
 button.say-hello:hover {
   background: var(--primary-color);
   color: #ffffff;
-} this is the css header.header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav.nav {
-    margin-top: 10px;
-    flex-direction: column;
-  }
-
+}
 
 #loader {
   position: fixed;
@@ -1499,20 +1489,18 @@ main .profile-pic {
 }
 
 @media (max-width: 768px) {
-  .sidebar-toggle {
-    display: block;
+  header.header {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .header .nav {
-    display: none; /* Hide the regular nav on mobile */
+  nav.nav {
+    margin-top: 10px;
+    flex-direction: column;
   }
 
-  .mobile-sidebar {
-    left: -250px;
-  }
-
-  #sidebar-toggle:checked + #mobile-sidebar {
-    left: 0; /* Show sidebar when toggle is checked */
+  nav .mentorship-link {
+    margin-bottom: 10px;
   }
   main .hero h1 {
     font-size: 2.2em;
