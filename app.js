@@ -55,7 +55,7 @@ const textareaField = document.getElementsByClassName("unique-textarea")[0]; // 
 submitBtn.addEventListener("click", function(event) {
   // Check if the fields are empty
   if (nameField.value === "" || textareaField.value === "") {
-    alert("Empty form :( .\nPlease enter your name and message before submitting.");
+    alert("Empty form :( \nPlease enter your name and message before submitting.");
     event.preventDefault(); // Prevent form submission
   }
 });
