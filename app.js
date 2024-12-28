@@ -60,6 +60,8 @@ submitBtn.addEventListener("click", function(event) {
   }
 });
 
+
+
 // JavaScript to toggle sidebar visibility
 const menuToggle = document.getElementById("menuToggle");
 const sidebar = document.getElementById("sidebar");

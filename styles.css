@@ -1462,17 +1462,15 @@ main .profile-pic {
   }
 
   .menu-toggle {
-    display: block; /* Display hamburger icon on mobile */
+    display: block; /* Show hamburger icon */
     position: absolute;
     top: 15px;
     left: 15px;
   }
 
   .sidebar {
-    left: -250px; /* Initially hidden off-screen */
+    left: -250px; /* Hidden off-screen initially */
   }
-
-
   main .hero h1 {
     font-size: 2.2em;
   }
