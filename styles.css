@@ -490,7 +490,7 @@ main .profile-pic {
   justify-content: space-around;
   padding: 0 15px;
   position: relative;
-  bottom: 150px;
+  bottom: 60px;
 }
 
 .skill-card {
@@ -1067,8 +1067,8 @@ main .profile-pic {
   opacity: 0.9;
 }
 .icon-circle {
-  width: 128px;
-  height: 128px;
+  width: 100px;
+  height: 100px;
   background-color: #5b45ff;
   border-radius: 50%;
   display: flex;
@@ -1078,8 +1078,8 @@ main .profile-pic {
 }
 
 .icon {
-  width: 64px;
-  height: 64px;
+  width: 50px;
+  height: 50px; 
   color: white;
 }
 .social-icons {
@@ -1265,7 +1265,7 @@ main .profile-pic {
   }
   .project-section {
     flex-direction: column;
-    top: 80px;
+    top: 15px;
   }
   .testimonial-slide {
     padding: 0px;
@@ -1323,9 +1323,7 @@ main .profile-pic {
     margin-bottom: 20px;
   }
   .skill-card {
-    max-width: 100%;
-    margin-bottom: 30px;
-    margin-top: 100px;
+    max-width: 100%; 
   }
   .start-up-section {
     padding: 60px 15px;
@@ -1469,8 +1467,8 @@ main .profile-pic {
   }
 
   main .profile-pic {
-    width: 90px;
-    height: 90px;
+    width: 150px;
+    height: 150px;
     margin-bottom: 20px;
   }
 
