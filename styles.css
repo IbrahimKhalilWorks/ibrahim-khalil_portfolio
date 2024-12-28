@@ -19,13 +19,11 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   overflow-x: hidden;
-}
+}/* Header */
 header.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--background-color);
-  padding: 10px;
 }
 
 header .logo {
@@ -39,11 +37,15 @@ nav.nav {
   align-items: center;
 }
 
+nav .mentorship-link:hover {
+  color: var(--button-border-color);
+}
 nav .mentorship-link {
   text-decoration: none;
   font-size: 1.2em;
   color: var(--header-color);
   margin-right: 20px;
+  transition: 0.5s;
 }
 
 button.say-hello {
@@ -54,197 +56,22 @@ button.say-hello {
   padding: 12px 30px;
   border-radius: 30px;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 button.say-hello:hover {
   background: var(--primary-color);
   color: #ffffff;
-}
+} this is the css header.header {
+    flex-direction: column;
+    text-align: center;
+  }
 
-/* Sidebar Styles */
-.mobile-sidebar {
-  position: fixed;
-  top: 0;
-  left: -250px; /* Start hidden */
-  width: 250px;
-  height: 100%;
-  background-color: var(--primary-color);
-  color: var(--background-color);
-  transition: left 0.3s ease;
-  z-index: 1000;
-  padding: 10px;
-}
+  nav.nav {
+    margin-top: 10px;
+    flex-direction: column;
+  }
 
-.mobile-sidebar .sidebar-header {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.mobile-sidebar .sidebar-close {
-  font-size: 30px;
-  color: var(--background-color);
-  cursor: pointer;
-}
-
-.mobile-sidebar .sidebar-content a {
-  display: block;
-  font-size: 1.2em;
-  color: var(--background-color);
-  margin: 10px 0;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.mobile-sidebar .sidebar-content a:hover {
-  color: var(--secondary-color);
-}
-
-/* Sidebar Toggle Button */
-.sidebar-toggle {
-  font-size: 30px;
-  background: none;
-  border: none;
-  color: var(--header-color);
-  cursor: pointer;
-  display: none;
-}
-
-/* Sidebar Styles */
-#nav-bar {
-  position: absolute;
-  left: 1vw;
-  top: 1vw;
-  height: calc(100% - 2vw);
-  background: #18283b;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  color: #f5f6fa;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  overflow: hidden;
-  user-select: none;
-}
-
-#nav-toggle-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-input[type="checkbox"] {
-  display: none;
-}
-
-#nav-toggle-burger {
-  position: relative;
-  width: 20px;
-  height: 2px;
-  background: #18283b;
-  border-radius: 99px;
-  transition: background .2s;
-}
-
-#nav-toggle-burger:before, #nav-toggle-burger:after {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 2px;
-  background: #f5f6fa;
-  border-radius: 99px;
-  transition: .2s;
-}
-
-#nav-toggle-burger:before {
-  top: -6px;
-}
-
-#nav-toggle-burger:after {
-  top: 6px;
-}
-
-/* Sidebar content */
-#nav-content {
-  padding: 16px 0;
-  position: relative;
-  flex: 1;
-  width: 256px;
-  background: #18283b;
-  box-shadow: 0 0 0 16px #18283b;
-  overflow-x: hidden;
-  transition: width .2s;
-}
-
-.nav-button {
-  position: relative;
-  margin-left: 16px;
-  height: 54px;
-  display: flex;
-  align-items: center;
-  color: #8392a5;
-  cursor: pointer;
-  transition: color .2s;
-}
-
-.nav-button:hover {
-  color: #f5f6fa;
-}
-
-.nav-button i {
-  margin-right: 10px;
-}
-
-/* Footer */
-#nav-footer {
-  position: relative;
-  width: 256px;
-  height: 54px;
-  background: #2c3e50;
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  padding: 0 16px;
-}
-
-#nav-footer-avatar {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-#nav-footer-avatar img {
-  width: 100%;
-  height: 100%;
-}
-
-#nav-footer-titlebox {
-  margin-left: 16px;
-  display: flex;
-  flex-direction: column;
-}
-
-#nav-footer-subtitle {
-  color: #8392a5;
-  font-size: 0.6rem;
-}
-
-/* Toggle Nav */
-#nav-toggle:checked ~ #nav-bar #nav-header {
-  width: 80px;
-}
-
-#nav-toggle:checked ~ #nav-bar #nav-content {
-  width: 80px;
-}
-
-#nav-toggle:checked ~ #nav-bar #nav-footer {
-  width: 80px;
-}
-
-#nav-toggle:checked ~ #nav-bar #nav-content .nav-button span,
-#nav-toggle:checked ~ #nav-bar #nav-footer-titlebox {
-  opacity: 0;
-}
 
 #loader {
   position: fixed;

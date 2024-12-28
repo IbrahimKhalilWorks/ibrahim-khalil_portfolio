@@ -61,17 +61,4 @@ submitBtn.addEventListener("click", function(event) {
 });
 
 
-
-// Toggle the mobile sidebar
-const sidebarToggle = document.getElementById('sidebar-toggle');
-const mobileSidebar = document.getElementById('mobile-sidebar');
-const sidebarClose = document.getElementById('sidebar-close');
-
-sidebarToggle.addEventListener('click', () => {
-  mobileSidebar.style.left = '0';
-});
-
-sidebarClose.addEventListener('click', () => {
-  mobileSidebar.style.left = '-250px';
-});
-
+ 
