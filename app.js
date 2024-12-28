@@ -45,4 +45,12 @@ window.addEventListener("load", () => {
 // // Initial display
 // showSlide(currentSlide);
 
+
+// form code
+const submitBtn = document.getElementsByClassName("unique-submit-btn");
+const nameField = document.getElementsByClassName("unique-input").value;
+const textareaField = document.getElementsByClassName("unique-textarea").value;
+if(nameField.value === "" || textareaField.value === ""){
+  alert("Empty form :( .\n Please enter you name and email address before submit. ")
+}
  
