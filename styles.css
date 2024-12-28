@@ -20,11 +20,12 @@ body {
   background-color: var(--background-color);
   overflow-x: hidden;
 }
-/* Header */
 header.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--background-color);
+  padding: 10px;
 }
 
 header .logo {
@@ -38,15 +39,11 @@ nav.nav {
   align-items: center;
 }
 
-nav .mentorship-link:hover {
-  color: var(--button-border-color);
-}
 nav .mentorship-link {
   text-decoration: none;
   font-size: 1.2em;
   color: var(--header-color);
   margin-right: 20px;
-  transition: 0.5s;
 }
 
 button.say-hello {
@@ -57,12 +54,59 @@ button.say-hello {
   padding: 12px 30px;
   border-radius: 30px;
   cursor: pointer;
-  transition: all 0.5s ease;
 }
 
 button.say-hello:hover {
   background: var(--primary-color);
   color: #ffffff;
+}
+
+/* Sidebar Styles */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Start hidden */
+  width: 250px;
+  height: 100%;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding: 10px;
+}
+
+.mobile-sidebar .sidebar-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobile-sidebar .sidebar-close {
+  font-size: 30px;
+  color: var(--background-color);
+  cursor: pointer;
+}
+
+.mobile-sidebar .sidebar-content a {
+  display: block;
+  font-size: 1.2em;
+  color: var(--background-color);
+  margin: 10px 0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.mobile-sidebar .sidebar-content a:hover {
+  color: var(--secondary-color);
+}
+
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: var(--header-color);
+  cursor: pointer;
+  display: none;
 }
 
 /* Sidebar Styles */
@@ -1628,29 +1672,20 @@ main .profile-pic {
 }
 
 @media (max-width: 768px) {
-  header.header {
-    flex-direction: column;
-    text-align: center;
+  .sidebar-toggle {
+    display: block;
   }
 
-  nav.nav {
-    margin-top: 10px;
-    flex-direction: column;
+  .header .nav {
+    display: none; /* Hide the regular nav on mobile */
   }
 
-  nav .mentorship-link {
-    margin-bottom: 10px;
+  .mobile-sidebar {
+    left: -250px;
   }
 
-  .menu-toggle {
-    display: block; /* Show hamburger icon */
-    position: absolute;
-    top: 15px;
-    left: 15px;
-  }
-
-  .sidebar {
-    left: -250px; /* Hidden off-screen initially */
+  #sidebar-toggle:checked + #mobile-sidebar {
+    left: 0; /* Show sidebar when toggle is checked */
   }
   main .hero h1 {
     font-size: 2.2em;

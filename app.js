@@ -62,14 +62,16 @@ submitBtn.addEventListener("click", function(event) {
 
 
 
-// JavaScript to toggle sidebar visibility
-const menuToggle = document.getElementById("menuToggle");
-const sidebar = document.getElementById("sidebar");
+// Toggle the mobile sidebar
+const sidebarToggle = document.getElementById('sidebar-toggle');
+const mobileSidebar = document.getElementById('mobile-sidebar');
+const sidebarClose = document.getElementById('sidebar-close');
 
-menuToggle.addEventListener("click", () => {
-  if (sidebar.style.left === "0px") {
-    sidebar.style.left = "-250px"; // Hide sidebar
-  } else {
-    sidebar.style.left = "0"; // Show sidebar
-  }
+sidebarToggle.addEventListener('click', () => {
+  mobileSidebar.style.left = '0';
 });
+
+sidebarClose.addEventListener('click', () => {
+  mobileSidebar.style.left = '-250px';
+});
+
