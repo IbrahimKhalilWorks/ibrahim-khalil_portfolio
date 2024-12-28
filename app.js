@@ -46,11 +46,16 @@ window.addEventListener("load", () => {
 // showSlide(currentSlide);
 
 
-// form code
-const submitBtn = document.getElementsByClassName("unique-submit-btn");
-const nameField = document.getElementsByClassName("unique-input").value;
-const textareaField = document.getElementsByClassName("unique-textarea").value;
-if(nameField.value === "" || textareaField.value === ""){
-  alert("Empty form :( .\n Please enter you name and email address before submit. ")
-}
- 
+// Get the button and form fields
+const submitBtn = document.getElementsByClassName("unique-submit-btn")[0]; // Assuming you're targeting the first button
+const nameField = document.getElementsByClassName("unique-input")[0]; // Assuming you're targeting the first input field
+const textareaField = document.getElementsByClassName("unique-textarea")[0]; // Assuming you're targeting the first textarea
+
+// Add an event listener to the submit button
+submitBtn.addEventListener("click", function(event) {
+  // Check if the fields are empty
+  if (nameField.value === "" || textareaField.value === "") {
+    alert("Empty form :( .\nPlease enter your name and message before submitting.");
+    event.preventDefault(); // Prevent form submission
+  }
+});
