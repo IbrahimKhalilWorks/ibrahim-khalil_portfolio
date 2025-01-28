@@ -1357,6 +1357,11 @@ main .profile-pic {
   }
 }
 @media (max-width: 768px) {
+    .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
   .skills {
     flex-direction: column;
     align-items: center;
