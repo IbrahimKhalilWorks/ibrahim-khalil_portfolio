@@ -1504,6 +1504,10 @@ main .profile-pic {
     font-size: 1em;
   }
 }
+.fa-brands:before, .fa-regular:before, .fa-solid:before, .fa:before, .fab:before, .far:before, .fas:before:hover {
+  content: var(--fa);
+  color: var(--primary-color);
+}
 .fa-brands:before, .fa-regular:before, .fa-solid:before, .fa:before, .fab:before, .far:before, .fas:before {
   content: var(--fa);
   color: var(--background-color);
