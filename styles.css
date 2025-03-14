@@ -1200,9 +1200,9 @@ main .profile-pic {
   transition: all 0.5s ease;
 }
 
-.social-icon:hover {
-  background-color: var(--background-color);
-  color: var(--primary-color); 
+.fa-brands:before, .fa-regular:before, .fa-solid:before, .fa:before, .fab:before, .far:before, .fas:before {
+  content: var(--fa);
+  color: var(--background-color);
 }
 
 .footer-credits {
@@ -1221,9 +1221,8 @@ main .profile-pic {
   text-decoration: none;
 }
 
-.fa-brands:before, .fa-regular:before, .fa-solid:before, .fa:before, .fab:before, .far:before, .fas:before {
-  content: var(--fa);
-  color: var(--background-color);
+.footer-credits a:hover {
+  color: #ffffff;
 }
 .unique-container {
   max-width: 800px;
