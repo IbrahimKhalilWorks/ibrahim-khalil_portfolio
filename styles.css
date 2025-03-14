@@ -1221,8 +1221,9 @@ main .profile-pic {
   text-decoration: none;
 }
 
-.footer-credits a:hover {
-  color: #ffffff;
+.fa-brands:before, .fa-regular:before, .fa-solid:before, .fa:before, .fab:before, .far:before, .fas:before {
+  content: var(--fa);
+  color: var(--background-color);
 }
 .unique-container {
   max-width: 800px;
@@ -1504,14 +1505,8 @@ main .profile-pic {
     font-size: 1em;
   }
 }
-.fa-brands:before, .fa-regular:before, .fa-solid:before, .fa:before, .fab:before, .far:before, .fas:before:hover {
-  content: var(--fa);
-  color: var(--primary-color);
-}
-.fa-brands:before, .fa-regular:before, .fa-solid:before, .fa:before, .fab:before, .far:before, .fas:before {
-  content: var(--fa);
-  color: var(--background-color);
-}
+ 
+
 @media (max-width: 768px) {
   header.header {
     flex-direction: column;
